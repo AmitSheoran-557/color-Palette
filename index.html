@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <meta name="title" content="choose your favorite color" />
+  <meta name="description" content="Generate random color palettes for web design and creative projects easily!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content=" " />
+  <meta property="og:title" content="choose your favorite color" />
+  <meta property="og:description"
+    content="Generate random color palettes for web design and creative projects easily!" />
+  <meta property="og:image" content="/meta-tag-img.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="  " />
+  <meta property="twitter:title" content="choose your favorite color" />
+  <meta property="twitter:description"
+    content="Generate random color palettes for web design and creative projects easily!" />
+  <meta property="twitter:image" content="/meta-tag-img.png" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#222]">
+  <section class="flex flex-col justify-center items-center min-h-screen">
+
+    <div class="mb-4">
+      <h1 class="text-4xl font-bold text-white">
+        Welcome to
+        <span class="text-blue-500" id="typed-text"></span>
+      </h1>
+    </div>
+
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+      <h1 class="text-2xl font-bold mb-4">Random Color Palette</h1>
+      <div id="palette" class="grid grid-cols-4 gap-4 mb-4">
+      </div>
+      <button onclick="generatePalette()" class="text-white px-6 bg-black py-2 rounded-md hover:bg-blue-900">
+        Generate New Palette
+      </button>
+    </div>
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./assets/js/app.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
