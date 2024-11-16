@@ -18,7 +18,7 @@ function generatePalette() {
         colorBox.style.backgroundColor = color;
         colorBox.classList.add("lg:p-10", "md:p-5", "p-2", "rounded-md", "shadow-xl");
         const para = document.createElement("p");
-        para.classList.add("text-black", "font-bold", "mt-2");
+        para.classList.add("text-black", "font-bold");
         para.textContent = color;
         colorBox.appendChild(para);
         palette.appendChild(colorBox);
