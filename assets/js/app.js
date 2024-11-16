@@ -16,7 +16,7 @@ function generatePalette() {
         const color = getRandomColor();
         const colorBox = document.createElement("div");
         colorBox.style.backgroundColor = color;
-        colorBox.classList.add("p-10", "rounded-md", "shadow-xl");
+        colorBox.classList.add("lg:p-10", "md:p-5", "p-2", "rounded-md", "shadow-xl");
         const para = document.createElement("p");
         para.classList.add("text-black", "font-bold", "mt-2");
         para.textContent = color;
